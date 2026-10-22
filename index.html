@@ -1,82 +1,119 @@
 <!DOCTYPE html>
 <html lang="id">
+ 
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Undangan Pernikahan Rania & Arga</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Undangan Pernikahan Kevin &amp; Kayla</title>
+ 
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="style.css">
 </head>
+ 
 <body>
-
-<div id="cover">
-  <div class="mono"><h1>Rania<span>&amp;</span>Arga</h1></div>
-  <p class="guest">Kepada Yth. Bapak/Ibu/Saudara/i<b id="guestName">Tamu Undangan</b></p>
-  <button class="btn" id="openBtn">Buka undangan</button>
-</div>
-
-<main>
-  <section id="hero">
-    <p class="soft">Kami mengundang Anda ke pernikahan kami</p>
-    <h1>Rania<span class="amp">&amp;</span>Arga</h1>
-    <p class="date">Sabtu, 20 Februari 2027</p>
-  </section>
-
-  <section class="reveal">
-    <p class="ayat">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan pasangan untukmu agar kamu merasa tenteram kepadanya.”</p>
-    <p class="soft">QS. Ar-Rum: 21</p>
-  </section>
-
-  <section class="reveal">
-    <h2>Mempelai</h2>
-    <p class="soft">Dengan memohon rahmat Allah SWT, kami akan menikah.</p>
-    <div class="couple">
-      <div><div class="avatar">R</div><h3>Rania Putri Maharani</h3><p class="soft">Putri kedua dari<br>Bapak Hendra Wijaya &amp; Ibu Sari Dewi</p></div>
-      <div><div class="avatar">A</div><h3>Arga Pratama Nugroho</h3><p class="soft">Putra pertama dari<br>Bapak Bambang Nugroho &amp; Ibu Lestari</p></div>
+ 
+  <!-- ========== SAMPUL ========== -->
+  <div id="cover">
+    <div class="cover-ring">
+      <h1>Kevin<span>&amp;</span>Kayla</h1>
     </div>
-  </section>
-
-  <section class="reveal">
-    <h2>Menghitung hari</h2>
-    <div id="cd" aria-live="off"><div><b id="d">0</b><small>hari</small></div><div><b id="h">0</b><small>jam</small></div><div><b id="m">0</b><small>menit</small></div><div><b id="s">0</b><small>detik</small></div></div>
-    <p style="margin-top:1.2rem"><a class="btn ghost" id="calBtn" href="#">Simpan ke kalender</a></p>
-  </section>
-
-  <section class="reveal">
-    <h2>Acara</h2>
-    <div class="events">
-      <div class="card"><h3>Akad nikah</h3><p>Sabtu, 20 Februari 2027<br>08.00 – 10.00 WIB</p></div>
-      <div class="card"><h3>Resepsi</h3><p>Sabtu, 20 Februari 2027<br>11.00 – 14.00 WIB</p></div>
-    </div>
-    <p style="margin-top:1.5rem">Gedung Graha Bunga<br>Jl. Raya Darmo No. 88, Surabaya</p>
-    <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Jl.+Raya+Darmo+88+Surabaya">Buka peta</a>
-  </section>
-
-  <section class="reveal">
-    <h2>Hadiah</h2>
-    <p class="soft">Doa restu Anda sudah menjadi hadiah terbaik. Jika ingin berbagi kebahagiaan, Anda dapat mengirimnya ke rekening berikut.</p>
-    <div class="card"><p class="soft" style="margin:0">Bank BCA a.n. Rania Putri Maharani</p><p class="acc" id="acc">1234567890</p><button class="btn ghost" id="copyBtn">Salin nomor</button></div>
-  </section>
-
-  <section class="reveal">
-    <h2>Konfirmasi &amp; ucapan</h2>
-    <div>
-      <label class="field"><span>Nama</span><input id="fName" maxlength="40" autocomplete="name"></label>
-      <label class="field"><span>Kehadiran</span><select id="fAtt"><option>Hadir</option><option>Tidak hadir</option><option>Masih ragu</option></select></label>
-      <label class="field"><span>Ucapan</span><textarea id="fMsg" rows="3" maxlength="200"></textarea></label>
-      <button class="btn" id="sendBtn">Kirim ucapan</button>
-      <p id="fErr" class="soft" role="alert" style="margin-top:.8rem"></p>
-    </div>
-    <div id="wishes"></div>
-  </section>
-</main>
-
-<footer>
-  <p>Terima kasih atas doa dan kehadiran Anda.</p>
-  <h3>Rania &amp; Arga</h3>
-</footer>
-
-<script src="script.js"></script>
+ 
+    <p class="guest">
+      Kepada Yth. Bapak/Ibu/Saudara/i
+      <b id="guestName">Tamu Undangan</b>
+    </p>
+ 
+    <button class="btn" id="openBtn" type="button">Buka undangan</button>
+  </div>
+ 
+  <main>
+ 
+    <!-- ========== HERO ========== -->
+    <section id="hero">
+      <p class="soft">Kami mengundang Anda ke pernikahan kami</p>
+      <h1>Kevin<span class="amp">&amp;</span>Kayla</h1>
+      <p class="date">Sabtu, 20 Februari 2027</p>
+    </section>
+ 
+    <!-- ========== AYAT ========== -->
+    <section class="reveal">
+      <p class="ayat">
+        “Dua hati yang bertemu bukanlah kebetulan, melainkan jalan yang disiapkan untuk saling melengkapi.”
+      </p>
+    </section>
+ 
+    <!-- ========== MEMPELAI ========== -->
+    <section class="reveal">
+      <h2>Mempelai</h2>
+      <p class="soft">Dengan penuh syukur dan sukacita, kami akan menikah.</p>
+ 
+      <div class="couple">
+        <div>
+          <div class="avatar">K</div>
+          <h3>Kevin Alexander Pratama</h3>
+          <p class="soft">
+            Putra pertama dari<br>
+            Bapak Hendra Pratama &amp; Ibu Maria Susanti
+          </p>
+        </div>
+ 
+        <div>
+          <div class="avatar">K</div>
+          <h3>Kayla Anindya Putri</h3>
+          <p class="soft">
+            Putri kedua dari<br>
+            Bapak Rudi Hartono &amp; Ibu Linda Kusuma
+          </p>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ========== HITUNG MUNDUR ========== -->
+    <section class="reveal">
+      <h2>Menghitung hari</h2>
+ 
+      <div id="countdown">
+        <div><b id="cdDays">0</b><small>hari</small></div>
+        <div><b id="cdHours">0</b><small>jam</small></div>
+        <div><b id="cdMinutes">0</b><small>menit</small></div>
+        <div><b id="cdSeconds">0</b><small>detik</small></div>
+      </div>
+    </section>
+ 
+    <!-- ========== ACARA ========== -->
+    <section class="reveal">
+      <h2>Acara</h2>
+ 
+      <div class="events">
+        <div class="card">
+          <h3>Akad nikah</h3>
+          <p>Sabtu, 20 Februari 2027<br>08.00 – 10.00 WIB</p>
+        </div>
+ 
+        <div class="card">
+          <h3>Resepsi</h3>
+          <p>Sabtu, 20 Februari 2027<br>11.00 – 14.00 WIB</p>
+        </div>
+      </div>
+ 
+      <p class="venue">
+        Gedung Graha Bunga<br>
+        Jl. Raya Darmo No. 88, Surabaya
+      </p>
+    </section>
+ 
+  </main>
+ 
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>Terima kasih atas doa dan kehadiran Anda.</p>
+    <h3>Kevin &amp; Kayla</h3>
+  </footer>
+ 
+  <script src="script.js"></script>
 </body>
+ 
 </html>
